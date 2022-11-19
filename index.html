@@ -1,44 +1,68 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>CodePen - Full Functional HTML Form #30days30submits #day-19</title>
-  <link rel="stylesheet" href="./style.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodersEvoke</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<section>
-  <div class="container">
-    <form action="https://formspree.io/f/meqdpzan" method="POST" id="my-form">
+    <header>
+        <a href="#" class="logo">Coders Evoke</a>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../project.html">Project</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            
+        </ul>
+        <div class="search">
+            <input type="text" name="" id="" placeholder="Search Here">
+            <button class="btn">Search</button>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="container">
+            <div id="scene">
+                <h2 id="text">
+                    <span data-depth-y="2">C</span>
+                    <span data-depth-y="-6">O</span>
+                    <span data-depth-y="5">D</span>
+                    <span data-depth-y="-8">E</span>
+                    <span data-depth-y="-3">R</span>
+                    <span data-depth-y="1">S</span>
+                    <span data-depth-y="-4">E</span>
+                    <span data-depth-y="4">V</span>
+                    <span data-depth-y="-6">O</span>
+                    <span data-depth-y="7">K</span>
+                    <span data-depth-y="-3">E</span>
+                </h2>
+                 <div class="layer" data-depth-y="5"><img src="coding.png"></div>
+            </div>
+        </div>
+    </section>
+    <div class="about">
+        <div class="slider"></div>
+        <h2>ABOUT US</h2>
 
-      <div class="form-group">
-        <label for="firstName"> First Name</label>
-        <input type="text" id="firstName" name="firstName">
-      </div>
-
-      <div class="form-group">
-        <label for="latsName">Last Name</label>
-        <input type="text" id="lastName" name="lastName">
-      </div>
-
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email">
-      </div>
-
-      <div class="form-group">
-        <label for="massage">Massage</label>
-        <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
-      </div>
-
-      <button type="submit">Submit</button>
-    </form>
-  </div>
-  <div id="status"></div>
-</section>
-<!-- partial -->
-  <script  src="./script.js"></script>
-
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur iste dicta
+            debitis quis optio pariatur delectus ea nobis reiciendis odit!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Praesentium quibusdam inventore laborum quo quidem veniam,
+            saepe incidunt laboriosam ullam pariatur recusandae doloremque nam ex sunt id
+            officia asperiores velit numquam, modi facilis architecto.
+            Velit repellat nisi vitae nobis nesciunt?Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Accusamus, inventore.</p>
+            
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        var text = document.getElementById('text');
+        var scene = document.getElementById('scene');
+        var parallelaxInstance = new Parallax(text);
+        var parallelaxInstance = new Parallax(scene);
+    </script>
 </body>
 </html>
