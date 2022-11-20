@@ -1,0 +1,1741 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+font-family: sans-serif;
+background-color: #e6e7ee;
+}
+nav{
+    position: fixed;
+    background-color: #e6e7ee;
+             border-color: #e6e7ee;
+             border: 0.0625rem solid transparent;
+             box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+    height: 80px;
+    width: 100%;
+    z-index: 999;
+   
+}
+
+nav ul{
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+   
+}
+nav ul li{
+    display: inline;
+    line-height: 80px;
+    margin: 0 15px;
+}
+nav ul li a{
+    color: black;
+    font-size: 17px;
+    padding: 15px 13px;
+}
+a.active,a:hover{
+    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #ffffff;
+    transition: 0.5s;
+}
+
+
+.btn{
+    width: 40px;
+    height: 35px;
+    position: fixed;
+    left: 0;
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+             border: 0.0625rem solid transparent;
+             box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+}
+
+.btn span{
+    width: 70%;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+    }
+
+    .btn span:first-child{
+        top: 25%;
+        }
+        
+        .btn span:last-child{
+        top: 75%;
+        }
+
+        
+
+        .btn.active span:first-child{
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(-50deg);
+        }
+        .btn.active span:last-child{
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(50deg);
+        }
+        .btn.active span:nth-child(2)
+        {
+            opacity: 0;
+        }
+        .btn{
+            display: none;
+        }
+        .btn.active{
+            left: 93%;
+        }
+
+  section{
+    padding: 100px 0px;
+  }
+
+    /*home section start*/
+
+        .home{
+            position: relative;
+            width: 100%;
+            height: 100%;
+           
+           
+        }
+        .home .home-control{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+        }
+        .home .home-control .left-control{
+            display: flex;
+            flex-direction: column;
+            flex: 50%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .serv .box .left .social-button button, .home-control .left-control .social-button button{
+            border-radius: 50%;
+            transition: all 0.2s ease;
+            width: 60px;
+            height: 60px;
+            background-color: #e6e7ee;
+            border-color: #e6e7ee;
+            box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+            padding: 10px;
+            border: 0.0625rem solid transparent;
+            margin-left: 40px;
+            margin-bottom: 30px;
+            cursor: pointer;
+        }
+        
+        .serv .box .left .social-button button:hover, .home .home-control .left-control .social-button button:hover{
+            box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #ffffff;
+            transition: 0.5s;
+        }
+        .serv .box .left .social-button i, .home .home-control .left-control .social-button i{
+           font-size: 30px;
+        }
+        .serv .box .left .social-button button a, .home .home-control .left-control .social-button button a{
+            text-decoration: none;
+            color: black;
+        }
+        .home .home-control .left-control .text{
+            font-size: 25px;
+            letter-spacing: 7px;
+        }
+        
+        .home .home-control .left-control .button-control{
+            width: 230px;
+            font-size: 25px;
+            height: 55px;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: #e6e7ee;
+            border-color: #e6e7ee;
+                     border: 0.0625rem solid transparent;
+                     box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+        }
+        .home .home-control .left-control .button-control:hover{
+            box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #ffffff;
+            transition: 0.5s;
+        }
+        .home .home-control .right-control{
+            display: flex;
+            flex: 50%;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .home .home-control .right-control img{
+            width: 550px;
+            height: 500px;
+            padding: 20px;
+        }
+        
+        .home .home-control .robot-control{
+            position: fixed;
+            margin-left: 80%;
+            z-index: 2;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .home .home-control .robot-control img{
+            float: right;
+            margin-right: 50px;
+        }
+
+                   /*home section end*/
+                   section{
+                    padding: 100px 0;
+                   
+                }
+      /* about section start */
+.about{
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.about h2{
+    margin: auto;
+}  
+.about .text-content{
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+             border: 0.0625rem solid transparent;
+             box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+     width: 200px;
+     height: 50px;
+     position: relative;
+     text-align: center;
+     padding: 10px;
+     margin-bottom: 80px;
+     border-radius: 10px;
+
+}
+                .about .about-content{
+                   display: flex;
+                   flex-wrap: wrap;
+                   align-items: center;
+                   place-content: center;
+                   margin-top: 10px;
+                   
+                   }
+                   .about .about-content .left{
+                   width: 400px;
+                   margin-right: 25px;
+                   display: flex;
+                   background-color: #e6e7ee;
+                       border-color: #e6e7ee;
+                                border: 0.0625rem solid transparent;
+                                box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+                                height: 550px;
+                   
+                   }
+                   .about .about-content .left img{
+                       margin: auto auto;
+                       width: 90%;
+                       height: 500px;
+                       margin-top: 30px;
+                       object-fit: cover;
+                       border-radius: 6px;
+                   }
+                   .about .about-content .right{
+                       width: 900px;
+                       height: 550px;
+                       background-color: blue;
+                       background-color: #e6e7ee;
+                       border-color: #e6e7ee;
+                                border: 0.0625rem solid transparent;
+                                box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+                                margin-right: 25px;
+
+                   }
+                   .about .about-content .right .text{
+                    font-size: 20px;
+                    margin: 20px 20px 20px 20px;
+                    letter-spacing: 3px;
+                    line-height: 1.6;
+                    
+                   }
+                   .about .about-content .right .social-button{
+                    margin-top: 30px;  
+                    display: flex;
+                    place-content: center;
+                 }
+
+                   .about .about-content .right .social-button button{
+                    border-radius: 50%;
+                    transition: all 0.2s ease;
+                    width: 60px;
+                    height: 60px;
+                    background-color: #e6e7ee;
+                    border-color: #e6e7ee;
+                    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+                    padding: 10px;
+                    border: 0.0625rem solid transparent;
+                    margin-left: 30px;
+                    cursor: pointer;
+                }
+                .about .about-content .right .social-button button:hover{
+                    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #ffffff;
+                    transition: 0.5s; 
+                }
+                .about .about-content .right .social-button button i{
+                    font-size: 30px;
+                }
+        /* about section end */
+        /* Services Section design Start */
+
+     /*team design start */
+     .service .text3{
+        background-color: #e6e7ee;
+        border-color: #e6e7ee;
+        box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+        padding: 10px;
+        border: 0.0625rem solid transparent;
+        width: 200px;
+        height: 50px;
+        margin: auto;
+
+     }
+ .serv{
+   
+      font-family: sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100%;      
+   }
+
+    .swiper{
+        width: 1400px;
+        height: 550px;
+       
+    }
+    .serv .swiper-pagination-bullet{
+        width: 26px;
+        height: 10px;
+        border-radius: 25px;
+        background-color: black;
+        position: relative;
+    }
+    .serv .swiper-button-next{
+        visibility: inherit;
+        display: none;
+       }
+     .serv .swiper-button-prev{
+        visibility: inherit;
+        display: none;
+       }
+   .main .card{
+       width: 1400px;
+       display: flex;
+       position: relative;
+       height: 450px;
+       justify-content: center;
+       
+   }
+  
+   .main .card .box{
+    width: 1200px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 750px 300px;
+    grid-template-rows: 400px;
+    justify-content: center;
+    column-gap: 20px;
+    align-content: center;
+    background-color: #e6e7ee;
+       border-color: #e6e7ee;
+                border: 0.0625rem solid transparent;
+                box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+                height: 460px;
+                margin-top: 20px;
+
+}
+
+.serv .box .left .text{
+    font-size: 25px;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+.serv .box .left .button-control{
+    margin-top: 19px;
+}
+.serv .box .left .button-control button{
+    width: 170px;
+    height: 50px;
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+             border: 0.0625rem solid transparent;
+             box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 10px;
+    font-size: 20px;   
+}
+.serv .box .left .button-control button:hover{
+    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #ffffff;
+    transition: 0.5s;   
+}
+.serv .box .left .social-button{
+    margin-top: 25px;
+}
+.serv .box .left .social-button button{
+    margin-left: 25px;
+}
+
+
+   .main .card .box img{
+       height: 100%;
+       width: 100%;
+   }
+
+   /*skill section start*/
+    .skill{
+        display: grid;
+        place-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+.team .title, .skill .My-Skill{
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+             border: 0.0625rem solid transparent;
+             box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+     width: 200px;
+     height: 50px;
+     position: relative;
+     text-align: center;
+     padding: 10px;
+     margin-bottom: 50px;
+     margin-top: -40px;
+     border-radius: 10px;
+}
+   .skill .skill-content{
+    width: 1100px;
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+             border: 0.0625rem solid transparent;
+             box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+   }
+
+   .skill .skill-content .bar{
+    margin: 10px 30px 10px 30px;
+   }
+ 
+
+ .skill .skill-content .bar .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ 
+ .skill .skill-content .bar span{
+
+    font-size: 25px;
+    font-weight: 800;
+
+ }
+
+ .skill .skill-content .bar .line{
+    margin-top: 2px;
+    width: 100%;
+    height: 15px;
+    background: lightgrey;
+    position: relative;
+ }
+ .skill .skill-content .bar .line::before{
+     content: "";
+     height: 100%;
+     position: absolute;
+     left: 0;
+     top: 0;
+     background-color: red;
+ }
+ .skill .skill-content .bar .html::before{
+    width: 90%;
+ }
+ .skill .skill-content .bar .CSS::before{
+    width: 95%;
+ }
+ .skill .skill-content .bar .Bootstrap::before{
+    width: 90%;
+ }
+ .skill .skill-content .bar .JavaScript::before{
+    width: 80%;
+ }
+ .skill .skill-content .bar .React::before{
+    width: 75%;
+ }
+ .skill .skill-content .bar .Tailwind::before{
+    width: 90%;
+ }
+ .skill .skill-content .bar .python::before{
+    width: 90%;
+ }
+ .skill .skill-content .bar .php::before{
+    width: 85%;
+ }
+   /*Skill section End*/
+
+   /*Team section start*/
+    .team{
+        display: grid;
+        place-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+   .team .swiper{
+        width: 500px;
+        height: 600px;
+    }
+
+    .team .swiper-slide{
+        display: grid;
+        place-items: center;
+        background-color: #e6e7ee;
+        border-color: #e6e7ee;
+                 border: 0.0625rem solid transparent;
+                 box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+                 width: 500px;
+    }
+   .team .swiper-slide::before{
+    content: '';
+            position: absolute;
+            width: 700px;
+            height: 700px;
+            border-radius: 50%;
+            background: linear-gradient(-45deg, #4481eb, #04befe);
+            top: -9%;
+            right: 30%;
+            transform: translateY(-50%);
+            z-index: -1;
+    }
+.team .swiper-slide .content{
+    text-align: center;
+    margin: 0 5px 0 5px;
+}
+    .team .swiper-slide img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    .team .swiper-slide .content .text{
+        font-size: 30px;
+        margin: 10px 0 10px 0;
+    }
+    .team .swiper-slide .content .info{
+    font-size: 20px;
+    }
+    .team .swiper-slide .content .social-button{
+        margin-top: 20px;
+    }
+
+    .team .swiper-slide .content .social-button button{
+        border-radius: 50%;
+        transition: all 0.2s ease;
+        width: 50px;
+        height: 50px;
+        background-color: #e6e7ee;
+        border-color: #e6e7ee;
+        box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+        padding: 10px;
+        border: 0.0625rem solid transparent;
+        margin-left: 25px;
+        margin-bottom: 30px;
+        cursor: pointer;
+        text-align: center;
+    }
+     
+    .team .swiper-slide .content .social-button button:hover{
+        box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #ffffff;
+        transition: 0.5s;
+    }
+    
+    .team .swiper-slide .content .social-button i{
+        font-size: 25px;
+    }
+   /*Team section end*/
+
+
+
+   /* Services Section design Start */
+.projects{
+    background-color: #e6e7ee;
+}
+
+.projects .title{
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+             border: 0.0625rem solid transparent;
+             box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+     width: 200px;
+     height: 50px;
+     position: relative;
+     text-align: center;
+     margin: auto;
+     padding: 10px;
+     margin-bottom: 50px;
+     margin-top: -40px;
+     border-radius: 10px;
+}
+.projects .projects-content{
+    display: grid;
+    grid-template-columns: repeat(3, 29%);
+    grid-template-rows: auto auto;
+    place-content: center;
+}
+.projects .projects-content .card{
+    display: inline-flex;
+    padding: 20px 25px;
+    margin-left: 40px;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 30px;
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+             border: 0.0625rem solid transparent;
+             box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+    cursor: pointer;
+
+}
+
+.projects .projects-content .card:hover{
+   
+    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #ffffff;
+}
+.projects .projects-content .card .box{
+    transition: all 0.3s ease;
+   
+}
+
+.projects .projects-content .card:hover .box{
+    transform: scale(1.05);
+}
+.projects .projects-content .card .box img{
+    width: 90%;
+    height: 300px;
+}
+.projects .projects-content .card .box button{
+    width: 170px;
+    height: 50px;
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+             border: 0.0625rem solid transparent;
+             box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.projects .projects-content .card .box button:hover{
+    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #ffffff;
+        transition: 0.5s; 
+}
+.projects .projects-content .card .box .button-control i{
+    margin-right: 10px;
+}
+/*.projects .projects-content .card i{
+    color: red;
+    transition: all 0.3s ease;
+    font-size: 25px;
+}
+
+.projects .projects-content .card:hover i{
+    color: white;
+    transition: all 0.3s ease;
+    font-size: 25px;
+}*/
+/* Services Section design end */
+
+
+   /*contact section start*/
+   .contact .main{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+   
+}
+.contact .title{
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+             border: 0.0625rem solid transparent;
+             box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+     width: 250px;
+     height: 50px;
+     position: relative;
+     text-align: center;
+     margin: auto;
+     padding: 10px;
+     margin-bottom: 50px;
+     margin-top: -40px;
+     border-radius: 10px;
+
+}
+.contact .main .sub-content{
+    width: 80%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.contact .main .sub-content .left{
+    flex: 48%;
+    background-color: #e6e7ee;
+            border-color: #e6e7ee;
+            box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+            border: 0.0625rem solid transparent;
+}
+.contact .main .sub-content .left .basic-info{
+    width: 80%;
+    height: 70%;
+    position: relative;
+    margin: 100px auto;
+}
+
+.contact .main .sub-content .left .basic-info .basic{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0px;
+    margin-top: 20px;
+}
+.contact .main .sub-content .left .basic-info .email-control{
+    width: 100%;
+    height: 33%;
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+    border: 0.0625rem solid transparent;
+}
+.contact .main .sub-content .left .basic-info i{
+   font-size: 50px;
+   margin-right: 40px;
+   margin-top: 2px;
+}
+.contact .main .sub-content .left .basic-info .address-control{
+    width: 100%;
+    height: 33%;
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+    border: 0.0625rem solid transparent;
+}
+
+.contact .main .sub-content .left .basic-info .contact-number{
+    width: 100%;
+    height: 33%;
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+    border: 0.0625rem solid transparent;
+}
+
+
+
+
+.contact .main .sub-content form{
+    flex: 48%;
+    background-color: #e6e7ee;
+            border-color: #e6e7ee;
+            box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+            border: 0.0625rem solid transparent;
+    background-color: #e6e7ee;
+
+}
+
+.ali{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    margin-left: 270px;
+    border-radius: 50%;
+    margin-top: -65px;
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+    border: 0.0625rem solid transparent;
+   
+}
+.contact .main .sub-content form h2{
+text-align: center;
+margin-top: 5px;
+}
+.contact .main .sub-content form .input-group{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.contact .main .sub-content form .input-group input{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+    font-size: 20px;
+    color:blue;
+    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #ffffff;
+    border: 0.0625rem solid transparent;
+
+}
+.contact .main .sub-content form .input-group input:focus{
+    outline: none;
+}
+
+
+.contact .main .sub-content form .input-group span{
+    position: absolute;
+    bottom: 13px;
+    right: 18%;
+}
+.contact .main .sub-content form .input-group i{
+    font-size: 25px;
+    color: black;
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+}
+
+
+.contact .main .sub-content form textarea{
+    margin-top: 35px;
+    margin-left: 30px;
+    width: 80%;
+    height: 200px;
+    border-radius: 10px;
+    border-radius: 10px;
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+    font-size: 20px;
+    color:blue;
+    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #ffffff;
+    border: 0.0625rem solid transparent;
+   
+}
+.contact .main .sub-content form .submit-button{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+    color: black;
+    font-size: 25px;
+    padding: 10px;
+    border: 0.0625rem solid transparent;
+    cursor: pointer;
+
+}
+.contact .main .sub-content form button:hover{
+    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #ffffff;
+}
+.contact .main .sub-content form .social-button{
+   text-align: center;
+}
+.contact .main .sub-content form .social-button button{
+    position: relative;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    width: 60px;
+    height: 60px;
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+    padding: 10px;
+    border: 0.0625rem solid transparent;
+    margin-left: 20px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.contact .main .sub-content form .social-button button i{
+    font-size: 32px;
+}
+.contact .main .sub-content form .social-button button a{
+    color: black;
+}
+.contact .main .sub-content form .social-button button:hover{
+    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #ffffff; 
+}
+   /*contact section end*/
+
+   /*footer section start*/
+   .footer{
+    width: 100%;
+    height: 450px;
+    display: grid;
+
+   } 
+
+   .footer .footer-content{
+    width: 100%;
+    height: 420px;
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+    border: 0.0625rem solid transparent;
+   }
+   .footer .footer-content .footer-box{
+    display: grid;
+    place-content: center;
+    grid-template-columns: 400px 300px 300px;
+    grid-template-rows: 300px;
+    column-gap: 120px;
+    margin-top: 20px;
+   }
+
+   .footer .footer-content .footer-box .info1{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+    border: 0.0625rem solid transparent;
+   }
+   .footer .footer-content .footer-box .info1 .social-button button{
+    position: relative;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    width: 50px;
+    height: 50px;
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+    padding: 10px;
+    border: 0.0625rem solid transparent;
+    margin-left: 10px;
+    margin-top: 25px;
+    cursor: pointer;
+
+   }
+   .footer .footer-content .footer-box .info1 .social-button button:hover{
+    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #ffffff; 
+}
+.footer .footer-content .footer-box .info1 .social-button i{
+    font-size: 25px;
+}
+   .footer .footer-content .footer-box .info2{
+    font-size: 20px;
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+    border: 0.0625rem solid transparent;
+   }
+   .footer .footer-content .footer-box .info3{
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+    border: 0.0625rem solid transparent;
+   }
+   .footer .footer-content .footer-box .info3 .text{
+    font-size: 25px;
+   }
+   .footer .footer-content .footer-box .info3 .font{
+    font-size: 20px;
+    margin-top: 5px;
+    font-weight: bold;
+   }
+   
+   .footer .footer-content .footer-box .info3 .font .info{
+    margin-top: 20px;
+   }
+
+   /*footer section end*/
+
+
+
+
+   
+
+
+
+
+
+   
+@media(max-width: 1224px){
+    nav ul h2{
+        display: none;
+    }
+    .swiper{
+        width: 1200px;
+       
+    }
+    .main .card{
+        width: 1100px;
+    }
+    .main .card .box{
+        width: 1000px;
+        grid-template-columns: 600px 250px;
+    }
+
+    .serv .box .left .text{
+        font-size: 22px;
+        margin-top: 20px;
+        line-height: 1.6;
+    }
+
+    /*skill section start*/
+    .skill .skill-content{
+        width: 1000px;
+    }
+
+    /*skill section end*/
+    .projects .projects-content .card .box img{
+        width: 90%;
+        height: 80%;
+    }
+    /*contact section start*/
+
+
+    .contact .main .sub-content .left .basic-info .basic{
+        font-size: 25px;
+        padding: 10px 0px;
+        margin-top: 20px;
+    }
+    
+
+    .ali{
+        margin-left: 170px;
+    }
+    
+    .contact .main .sub-content{
+        width: 90%;
+    }
+
+
+    /*contact section end*/
+
+    .projects .projects-content .card .box button{
+        margin: 20px 10px 0px 0px;
+    }
+
+
+/*footer section start */
+.footer .footer-content .footer-box{
+    column-gap: 20px;
+}
+
+
+/*footer section End*/
+
+}
+    
+
+    
+
+        @media(max-width: 991px){
+             
+
+            .btn{
+                display: block;
+                z-index: 999;
+                
+             }
+           
+            .navbar.active{
+                width: 100%;
+            }
+            .navbar{
+                height: 100%;
+                position: fixed;
+                top: 0;
+                text-align: center;
+                transition: 0.5s;
+                left: 100%;
+            }
+            
+                .navbar.active{
+                    left: 0;
+                }
+                nav ul{
+                    flex-direction: column;
+                    margin-top: 20px;
+                    margin-right: 0px;
+                
+                }
+                
+                nav ul li{
+                    line-height: 100px;
+                   
+                }
+
+  /*home section start*/
+ 
+
+                .home .home-control .left-control{
+                    flex: 100%;
+ 
+                 }
+ 
+                 .home .home-control .right-control img{
+                     width: 50%;
+                 }
+ 
+                    /*home section end*/
+ 
+                    .about .about-content .left img{
+                     width: 90%;
+                    }
+ 
+                       /*service section start*/
+
+      /* about section  start */
+                .about .about-content .right{
+                    flex: 70%;
+                    margin-top: 40px;
+                    margin-left: 30px;
+                }
+                .about .about-content .right .text{
+                    font-size: 18px;
+                    line-height: 1.4;
+                }
+                .about .about-content .left{
+                    width: 60%;
+                    margin-left: 30px;
+                }
+                .about .about-content .left img{
+                    width: 65%;
+                    height: 500px;
+                }
+      /* about section  end*/
+
+      /*service section start*/
+      .serv{margin-top: 0px;}
+      .swiper{
+        width: 90%;
+        height: 900px;
+       
+    }
+    .main .card{
+        width: 670px;
+    }
+    .main .card .box{
+        width: 650px;
+        height: 800px;
+        grid-template-columns: 600px;
+      
+    }
+    .serv .card .box .left{
+        grid-row: 2/3;
+    }
+    .serv .box .left .text{
+        font-size: 20px;
+        margin-top: 20px;
+        line-height: 1.4;
+    }
+   
+    .main .card .box img{
+        height: 100%;
+        width: 100%;
+    }
+    /*service section end*/
+
+
+    /*skill section start*/
+    .skill .skill-content{
+        width: 700px;
+        height: 600px;
+    }
+    .skill .skill-content .bar{
+        margin: 20px 30px 10px 30px;
+       }
+
+    /*skill section end*/
+
+    /*project section start */
+    .projects .projects-content{
+        grid-template-columns: repeat(2, 42%);
+        grid-template-rows: auto auto auto;
+    }
+
+     /*project section end*/
+
+    /*contact section start*/
+    .contact{
+        margin-bottom: 250px;
+    }
+    .contact .main .sub-content .left{
+        flex: 98%;
+    }
+    
+    .contact .main .sub-content .left .basic-info{
+        margin: 50px auto;
+    }
+    .contact .main .sub-content form{
+        flex: 98%;
+        margin-top: 100px;
+    }
+
+    .contact .main .sub-content form .social-button{
+       text-align: center;
+    }
+
+    .ali{
+        margin-left: 350px;
+    }
+    .contact .main .sub-content form .input-group span{
+        right: 14%;
+    }
+    .contact .main .sub-content form .input-group input{
+        margin-left: 70px;
+    }
+
+    .contact .main .sub-content form textarea{
+        margin-left: 70px;   
+    }
+
+    .contact .main .sub-content form .submit-button{
+        margin-left: 70px;
+    }
+    /*contact section End*/
+
+    /*footer section start */
+    .footer .footer-content{
+        width: 100%;
+        height: 100%;
+       }
+
+/*team section end*/
+.footer{
+    position: absolute;
+    margin-top: 200px;
+}
+.footer .footer-content .footer-box{
+    grid-template-columns: 700px;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 50px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.footer .footer-content .footer-box .info2{
+    width: 700px;
+   }
+   .footer .footer-content .footer-box .info3{
+    width: 700px;
+   }
+/*footer section End*/
+
+
+     
+
+            }
+
+            @media(max-width: 752px){
+
+                .btn.active{
+                    left: 92%;
+                }
+                .about .about-content .left{
+                    width: 70%;
+                    height: 500px;
+                }
+                .about .about-content .left img{
+                    width: 80%;
+                    height: 450px;
+                }
+                   .about .about-content .right{
+                    flex: 70%;
+                    margin-top: 30px;
+                    margin-left: 30px;
+                    height: 600px;
+                }
+                .about .about-content .right .text{
+                    font-size: 18px;
+                    line-height: 1.4;
+                }
+
+                      /*service section start*/
+      .swiper{
+        width: 600px;
+       
+    }
+    .main .card{
+        width: 590px;
+    }
+    .main .card .box{
+        width: 590px;
+        height: 800px;
+        grid-template-columns: 550px;
+      
+    }
+    .serv .box .left .button-control button{
+        width: 135px;
+        height: 45px;
+    }
+    .main .card .box img{
+        height: 80%;
+        width: 90%;
+        margin-left: 30px;
+    }
+    .serv .box .left .social-button button{
+        width: 50px;
+        height: 50px;
+    }
+    .serv .box .left .social-button i{
+        font-size: 25px;
+    }
+    .serv .box .left .text{
+       margin: 0 10px 0 10px;
+    }
+   
+/*service section end*/
+
+
+ /*skill section start*/
+ .skill .skill-content{
+    width: 500px;
+    height: 650px;
+}
+.skill .skill-content .bar{
+    margin: 25px 30px 10px 30px;
+   }
+
+/*skill section end*/
+ /*team section start*/
+    
+ .team .swiper{
+    width: 450px;
+    height: 600px;
+}
+.team .swiper-slide{
+     width: 450px;
+     height: 600px;
+}
+
+/*team section end*/
+
+ /*project section start */
+ .projects .projects-content{
+    grid-template-columns: repeat(1, 80%);
+    grid-template-rows: auto auto auto;
+}
+.projects .projects-content .card{
+    margin-left: 0;
+}
+ /*project section end*/
+ .contact .main .sub-content .left .basic-info i{
+    font-size: 30px;
+ }
+ .contact .main .sub-content form .input-group span{
+    right: 12%;
+}
+.footer .footer-content .footer-box{
+    grid-template-columns: 500px;
+}
+
+.footer .footer-content .footer-box .footer-info{
+    width: 500px;
+   }
+   
+/*footer section End*/
+
+
+            }
+
+                @media(max-width: 552px){
+                    .btn.active{
+                        left: 90%;
+                    }
+
+                    .home-control .left-control .social-button button{
+                        margin-left: 25px;
+                    }
+
+                    .home .home-control .left-control .button1{
+                        margin-top: 10px;
+                        margin-right: 15px;
+
+                    }
+                   
+                   /*home section end*/
+                   .about .about-content .left{
+                    height: 450px;
+                   }
+                .about .about-content .left img{
+                    width: 90%;
+                    height: 400px;
+                }
+
+                .about .about-content .right{
+                    height: 700px;
+                 
+                }
+                .about .about-content .right .text{
+                    font-size: 17px;
+                    line-height: 1.4;
+                }
+                
+                      /*service section start*/
+      .swiper{
+        width: 500px;
+       
+    }
+    .main .card{
+        width: 490px;
+    }
+    .main .card .box{
+        width: 450px;
+        height: 760px;
+        grid-template-columns: 450px;
+      
+    }
+    .serv .box .left .button-control button{
+        width: 140px;
+        height: 40px;
+    }
+    .serv .box .left .social-button button{
+        width: 40px;
+        height: 40px;
+        margin-left: 14px;
+    }
+
+    .serv .box .left .social-button i{
+        font-size: 18px;
+    }
+    .main .card .box img{
+        height: 80%;
+        width: 90%;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+
+/*service section end*/
+
+/*skill section start*/
+.skill .skill-content{
+    width: 450px;
+    height: 650px;
+}
+.skill .skill-content .bar{
+    margin: 25px 30px 10px 30px;
+   }
+/*team section start*/
+.team .swiper{
+    width: 330px;
+    height: 450px;
+}
+
+.team .swiper-slide img{
+    width: 130px;
+    height: 130px;
+}
+.team .swiper-slide .content .info{
+    font-size: 15px;
+    }
+.team .swiper-slide{
+     width: 330px;
+     height: 450px;
+}
+.team .swiper-slide .content .social-button button{
+    width: 40px;
+    height: 40px; 
+    margin-left: 15px;
+}
+.team .swiper-slide .content .social-button i{
+    font-size: 18px;
+}
+/*team section end*/
+.projects .projects-content{
+    grid-template-columns: repeat(1, 87%);
+}
+/*contact section start */
+
+.contact .main .sub-content .left .basic-info .basic{
+    font-size: 20px;
+}
+.contact .main .sub-content form .input-group input{
+    margin-left: 50px;
+}
+.contact .main .sub-content form textarea{
+    margin-left: 50px;
+}
+.contact .main .sub-content form .submit-button{
+    margin-left: 50px;}
+/*contact section End */
+
+
+
+/*skill section end*/
+
+.footer .footer-content .footer-box{
+    grid-template-columns: 400px;
+}
+
+.footer .footer-content .footer-box .footer-info{
+    width: 400px;
+   }
+
+                }
+
+                @media(max-width: 452px){
+                    .btn.active{
+                        left: 87%;
+                    }
+                    .home .home-control .left-control .text{
+                        font-size: 20px;
+                    }
+                    .home .home-control .left-control .social-button button{
+                       width: 40px;
+                       height: 40px; 
+                    }
+                    .home .home-control .left-control .social-button i{
+                        font-size: 18px;
+                    }
+                    .home .home-control .left-control .button-control{
+                        width: 150px;
+                        height: 35px;
+                        font-size: 16px;
+                    }
+                    .home .home-control .right-control img{
+                        width: 400px;
+    
+                    }
+                     /*about section start*/
+                    .about .about-content .right{
+                        height: fit-content;
+                        margin-left: 20px;
+                        margin-right: 20px;
+                        width: 70%;
+                        margin-bottom: 100px;
+                     
+                    }
+                  
+                    .about .about-content .right .text{
+                        font-size: 17px;
+                        line-height: 1.2;
+                    }
+                    .about .about-content .right .social-button{
+                        margin-top: 10px;  
+                     }
+                    .about .about-content .right .social-button button{
+                        width: 40px;
+                        height: 40px;
+                        margin-left: 10px;
+                    }
+                    .about .about-content .right .social-button button i{
+                        font-size: 17px;
+                    }
+                     /*about section end*/
+
+                               /*service section start*/
+                               .service .text3{
+                                height: 30px;
+                                width: 150px;
+                                font-size: 12px;
+                                margin-bottom: 25px;
+                                text-align: center;
+                               }
+    .serv{
+        margin-left: 10px;
+    }                          
+     .swiper{
+        width: 390px;
+        height: 600px;
+       
+    }
+    .main .card{
+        width: 420px;
+    }
+    .main .card .box{
+        width: 85%;
+        height: 500px;
+        grid-template-columns: 415px;
+      
+    }
+    .serv .box .left{
+        margin-top: -170px;
+    }
+    .serv .box .left .social-button button{
+        width: 38px;
+        height: 38px;
+        margin-left: 10px;
+        font-size: 10px;
+        text-align: center;
+    }
+    .serv .box .left .social-button{
+        margin-left: 45px;
+    }
+    .serv .box .left .social-button i{
+        font-size: 15px;
+    }
+    .serv .box .left .text{
+        font-size: 14px;
+        margin-top: 2px;
+        line-height: 1.4;
+        text-align: center;
+        margin-left: 45px;
+       margin-right: 45px;
+    }
+    .serv .box .left h2{
+        font-size: 15px;
+    }
+    .serv .box .left .button-control{
+        margin-left: 40px;
+    }
+    .serv .box .left .button-control button{
+        width: 120px;
+        height: 30px;
+        font-size: 15px;
+    }
+    .main .card .box img{
+       width: 250px;
+       height: 180px;
+       margin: 40px 0 0 80px;
+    }
+/*service section end*/
+
+/*skill section start*/
+.team .title, .skill .My-Skill{
+    width: 130px;
+    height: 30px;
+    font-size: 12px;
+}
+.skill{
+    margin-top: 70px;
+}
+.skill .skill-content{
+    width: 95%;
+    height: 500px;
+    margin-left: 10px;
+}
+.skill .skill-content .bar{
+    margin: 25px 30px 10px 30px;
+   }
+
+   .skill .skill-content .bar span{
+    font-size: 15px;
+   }
+   .skill .skill-content .bar .line{
+    height: 10px;
+   }
+
+/*skill section end*/
+
+/*team section start*/
+.team{
+    margin-top: 200px;
+}
+.team .swiper{
+    width: 250px;
+    height: 430px;
+}
+
+.team .swiper-slide img{
+    width: 100px;
+    height: 100px;
+}
+.team .swiper-slide .content .text{
+    font-size: 20px;
+}
+.team .swiper-slide .content .info{
+    font-size: 13px;
+    }
+.team .swiper-slide{
+     width: 250px;
+     height: 430px;
+}
+.team .swiper-slide .content .social-button button{
+    width: 35px;
+    height: 35px;
+    margin-left: 7px;
+}
+.team .swiper-slide .content .social-button i{
+    font-size: 15px;
+}
+/*team section end*/
+.projects{
+    margin-left: 20px;
+}
+.projects .title{
+    width: 130px;
+    height: 30px;
+    font-size: 12px;
+}
+.projects .projects-content{
+    grid-template-columns: repeat(1, 92%);
+}
+.projects .projects-content .card .box button{
+    width: 120px;
+    height: 30px;
+    font-size: 12px;
+}
+.footer .footer-content{
+    height: 800px;
+}
+.contact .title{
+    width: 150px;
+    height: 30px;
+    font-size: 12px;
+}
+.contact .main .sub-content form .input-group input{
+   margin-left: 30px;
+}
+
+.contact .main .sub-content form textarea{
+    margin-left: 30px;
+}
+.contact .main .sub-content form .submit-button{
+    margin-left: 30px;
+    height: 40px;
+}
+.contact .main .sub-content form .social-button button{
+    width: 40px;
+    height: 40px;
+}
+.contact .main .sub-content form .social-button button i{
+    font-size: 18px;
+}
+.footer{
+    position: absolute;
+    margin-top: 2px;
+    height: 780px;
+    margin-top: 20px;
+}
+
+.footer .footer-content .footer-box .footer-info{
+    width: 300px;
+    height: 200px;
+   }
+   .footer .footer-content .footer-box .info1{
+    font-size: 12px;
+   }
+   .footer .footer-content .footer-box .info1 .social-button button{
+    width: 35px;
+    height: 35px;
+   }
+   .footer .footer-content .footer-box .info1 .social-button i{
+    font-size: 12px;
+}
+.footer .footer-content .footer-box .info2{
+    font-size: 12px;
+}
+.footer .footer-content .footer-box .info3 font{
+    font-size: 12px;
+}
+                }
