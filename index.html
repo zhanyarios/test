@@ -1,120 +1,1529 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        />
-        <link rel="stylesheet" href="style.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-            crossorigin="anonymous"
-        />
-        <title>🔥Project Create OTP - HTML/SCSS/JavaScript🌈</title>
-    </head>
-    <body class="d-flex align-items-center justify-content-center">
-        <div class="container-content">
-            <div class="mobile-verify go-right active-box">
-                <div
-                    class="nav d-flex align-items-center justify-content-center"
-                >
-                    <p>Mobile Verification</p>
-                </div>
-                <div class="text">
-                    <p>
-                        Please enter your mobile <br />number to verify your
-                        account
-                    </p>
-                    <p>You'll receive a 4 digit code <br />to verify</p>
-                </div>
-                <div class="phone-num-input">
-                    <div class="form-input">
-                        <label for="phone-number">Enter your phone</label>
-                        <input
-                            type="text"
-                            autocomplete="off"
-                            id="phone-number"
-                        />
-                        <span class="text-danger"></span>
-                    </div>
-                </div>
-                <button class="btn btn-continue">Send OTP</button>
-                <div class="keyboard d-flex flex-wrap">
-                    <span class="num-1 num" data-key="1">1</span>
-                    <span class="num-2 num" data-key="2">2</span>
-                    <span class="num-3 num" data-key="3">3</span>
-                    <span class="num-4 num" data-key="4">4</span>
-                    <span class="num-5 num" data-key="5">5</span>
-                    <span class="num-6 num" data-key="6">6</span>
-                    <span class="num-7 num" data-key="7">7</span>
-                    <span class="num-8 num" data-key="8">8</span>
-                    <span class="num-9 num" data-key="9">9</span>
-                    <span class="num-n num"></span>
-                    <span class="num-0 num" data-key="0">0</span>
-                    <span class="remove" data-key="backspace"
-                        ><i class="fas fa-backspace"></i
-                    ></span>
-                </div>
-            </div>
-            <div class="otp-container go-right">
-                <div class="nav d-flex align-items-center">
-                    <i class="btn-back fas fa-arrow-left"></i>
-                    <p>Verification Code</p>
-                </div>
-                <div class="text">
-                    <p>
-                        Please type the verification <br />
-                        code sent to
-                        <span class="phone">+8412345***</span>
-                    </p>
-                    <p>
-                        The OTP will expire in
-                        <span class="expire text-dark">30s</span>
-                    </p>
-                </div>
-                <div class="otp-input d-flex">
-                    <input type="text" maxlength="1" class="input" />
-                    <input type="text" maxlength="1" class="input" />
-                    <input type="text" maxlength="1" class="input" />
-                    <input type="text" maxlength="1" class="input" />
-                </div>
-                <span class="text-danger"></span>
-                <button
-                    class="btn btn-verify d-flex align-items-center justify-content-between"
-                >
-                    Verify now <i class="fas fa-arrow-right"></i>
-                </button>
-                <div class="resend-code text-muted">
-                    Didn't receive code?
-                    <span class="btn-resend text-danger">Request again</span>
-                </div>
-                <div class="keyboard d-flex flex-wrap">
-                    <span class="num-1 num" data-key="1">1</span>
-                    <span class="num-2 num" data-key="2">2</span>
-                    <span class="num-3 num" data-key="3">3</span>
-                    <span class="num-4 num" data-key="4">4</span>
-                    <span class="num-5 num" data-key="5">5</span>
-                    <span class="num-6 num" data-key="6">6</span>
-                    <span class="num-7 num" data-key="7">7</span>
-                    <span class="num-8 num" data-key="8">8</span>
-                    <span class="num-9 num" data-key="9">9</span>
-                    <span class="num-n num"></span>
-                    <span class="num-0 num" data-key="0">0</span>
-                    <span class="remove" data-key="backspace"
-                        ><i class="fas fa-backspace"></i
-                    ></span>
-                </div>
-            </div>
-            <div class="box-verify">
-                <i class="fas fa-check-circle"></i>
-                <p></p>
-            </div>
-        </div>
-        <script src="app.js"></script>
-    </body>
-</html>
+<html class="ios-translucent-bars ios-translucent-modals device-pixel-ratio-3 device-ios ios" lang="en"><head>
+<meta charset="utf-8">
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-DYR4FC3RB0&amp;l=dataLayer&amp;cx=c"></script><script src="/framework7/js/framework7.bundle.min.js"></script>
+<script src="/js/routes.js"></script>
+<script src="/js/app.js"></script>
+<link rel="icon" href="https://is.gd/9Pv6sA">
+<link rel="stylesheet" href="/framework7/css/framework7.bundle.min.css">
+<link rel="stylesheet" href="/css/icons.css">
+<link rel="stylesheet" href="/css/app.css">
+<link rel="stylesheet" href="/Propr7/test.css">
+<link href="/Js-Css/Half.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://MstafaExpert.xyz/Js-Css/k.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" href="https://mstafaexpert.xyz/image/iMstafa.jpg">
+<link rel="shortcut icon" href="https://mstafaexpert.xyz/image/iMstafa.jpg" type="image/x-icon">
+<title>MstafaExpert</title>
+<style>
+Expert{
+style="color:red;"
+}
+    a:active{
+        background: black;
+        color: red;
+    }
+    #Mode{
+        width: 1800px;
+        left: 300px;
+        bottom: 49px;
+        align-items: center;
+        text-align: right;
+        margin-top: 250em;
+    }
+
+    .kurdi1{
+
+        padding-top: 5px;
+        font-size: 20px;
+        text-align: center;
+    }
+body {font-family: Arial;}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+body {
+      margin: 0 0 55px 0;
+  }
+  
+  /* Style the tab */
+  nav {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 55px;
+      
+     
+      background-color: black;
+      display: flex;
+      overflow-x: auto;
+  }
+
+  /* Style the buttons inside the tab */
+   nav m {
+    
+  
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding-left: 10px;
+    transition: 0.3s;
+    font-size: 17px;
+  
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+      min-width: 50px;
+      overflow: hidden;
+      white-space: nowrap;
+      font-family: sans-serif;
+      font-size: 15px;
+      color: #8c8c8c;
+      text-decoration: none;
+      -webkit-tap-highlight-color: transparent;
+      transition: background-color 0.1s ease-in-out;
+  }
+  nav a:hover{
+  color:#0a84ff;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding-left:10px;
+  
+  }
+
+  
+.icob{
+font-size: 24px; 
+color: #8c8c8c;
+
+}
+.icob:hover {
+color: #1890ff;
+}
+
+
+ m {
+  text-decoration: none !important;
+}
+
+
+.tab m {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+
+.tab m:hover {
+  background-color: #ddd;
+}
+
+
+.tab m.active {
+  background-color: #ccc;
+}
+ks:active{
+}
+ls:active{
+background: white;
+color: red;
+}
+button18{
+background: white;
+color: red;
+}
+ls{
+text-align: right;
+text-decoration: none;
+text-transform: uppercase;
+letter-spacing: 3px;
+color: white;
+background: red;
+border: 1px solid white;
+padding: 5px;
+border-radius: 10px;
+box-shadow: 0px 0px 10px 0px black;
+}
+ks{
+}
+oa{
+    background: #000000;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head><body onload="iNoBounce.enable();" oncontextmenu="return false" style="color:green;" class="dark-mode">
+<script>
+        window.onload = function() {
+        if(!navigator.standalone) {
+            $("body").load('https://MstafaExpert.xyz/565/te0.html');
+        }
+        }
+        
+        </script>
+
+
+<nav class="tab">
+<m class="tablinks active" id="Mstafa71" onclick="openCity(event, 'Home')"><img class="i1 " src="https://is.gd/PtKxSP" style="width:24px;"><span class="nav__text">Home</span></m>
+<m class="tablinks" onclick="openCity(event, 'Apps')"><img class="i2 " src="https://is.gd/fDkvQr" style="width:24px;"><span class="nav__text">Apps</span></m>
+<m class="tablinks" onclick="openCity(event, 'About')"><img class="i3 " src="https://is.gd/xo6f3B" style="width:24px;"><span class="nav__text">About</span></m>
+</nav>
+<div id="Home" class="tabcontent" style="display: block;">
+<ks class="item-title" id="Mode" onclick="Mcho()"><img class="i1 " src="https://is.gd/19YJR4" style="width:50px; height:50px; border-radius:30%; float: right;"></ks>
+<br><br><br>
+<div class="leading-loose text-sm p-2 md:px-8 md:py-8 md:rounded-xl rounded border border-gray-300 md:border-0 shadow-lg bg-white overflow-hidden"><div class="flex justify-between">
+<h3 style="text-align: center; color:red;" class="flex justify-between">Code&nbsp;
+</h3>
+<input class="shadow appearance-none text-center border rounded w-full py-1 px-2 text-gray-25 leading-tight focus:outline-none focus:shadow-outline text-xl" id="linkId" placeholder="" style="background-color: #33FFFF; background-position: initial initial; background-repeat: initial initial; color: black;" type="tel"></div>
+<p class="text-gray-25 text-center hidden bg-gray-20 rounded my-1" id="slugHelp"></p>
+<div class="flex justify-center">
+<h2 class="my-3 bg-gray-25 hover:bg-yellow-25 text-white font-bold py-1 px-8 rounded focus:outline-none focus:shadow-outline" id="goButton" onclick="iMstafa()" style="background-color: #bd5858; text-align: center; background-position: initial initial; background-repeat: initial initial; color: rgb(255, 0, 0);" type="button">
+گەڕان</h2></div><div class="flex justify-center" style="text-align: right;"><font size="5"><br></font></div><div class="flex justify-center" style="text-align: right;"><br></div><div class="flex justify-center" style="text-align: right;"><font size="1"><b></b></font></div>
+</div>
+<lsa id="myBtn"><a style="text-align: right;"></a>
+<div id="myModal" class="modal">
+<div class="modal-content">
+<span class="close">×</span>
+
+<meta charset="utf-8">
+<p id="linkId1" style="color: #black;" class="kurdi1">بۆ دەستکەوتنی ئەپڵ ئایدی لە سناپ لەگەڵمان بە </p>
+<center>
+<a class="kurdis" onclick="location='https://is.gd/Sb9fcQ'"><button2 class="btn btn-primary" type="button">SnapChat</button2></a>
+</center>
+
+
+</div>
+</div>
+</lsa></div>
+
+
+<div id="Apps" class="tabcontent" style="display: none;">
+<div class="list media-list" id="all">
+<ul>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#Mstafa-App">
+<div class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://bit.ly/3jOGseM">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div style="color:#33FF00;" class="item-title">Apps</div>
+</div>
+<div class="item-title-row">
+<div style="color:red;" class="item-subtitle">پڵەس و کراک کراوەکان</div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#Mstafa-Game">
+<div class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/uDOP9l">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div style="color:#33FF00;" class="item-title">Game</div>
+</div>
+<div class="item-title-row">
+<div style="color:red;" class="item-subtitle">کراک کراوەکان</div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+</li><li>
+<a style="color: inherit;" class="popup-open" data-popup="#Mstafa-Jb">
+<div class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/uXcLx6">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div style="color:#33FF00;" class="item-title">جه‌ڵبرێك</div>
+</div>
+<div class="item-title-row">
+<div style="color:red;" class="item-subtitle"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+
+
+<li>
+</li><li>
+<a style="color: inherit;" class="popup-open" data-popup="#Mstafa-Tuto">
+<div class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/O9EKb6">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div style="color:#33FF00;" class="item-title">فێرکاری</div>
+</div>
+<div class="item-title-row">
+<div style="color:red;" class="item-subtitle"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+
+
+<li>
+</li><li>
+<a style="color: inherit;" class="popup-open" data-popup="#ipa-unsign1">
+<div class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/XyoZ7h">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div style="color:#33FF00;" class="item-title">ipa-UnSign</div>
+</div>
+<div class="item-title-row">
+<div style="color:red;" class="item-subtitle">SOON</div>
+</div>
+</div>
+</div>
+</a>
+</li>
+
+
+<li>
+</li><li>
+<div class="popup" id="Mstafa-Expert">
+<div class="view">
+<div class="page">
+<div class="navbar navbar-large">
+<div class="navbar-bg"></div>
+<div class="navbar-inner">
+<div class="title sliding">ئه‌په‌كان / زیادكراوه‌كان</div>
+<center>
+<div class="title-large">
+<div class="title-large-text">Apps</div>
+</div>
+</center>
+<div class="right">
+<ks class="link popup-close" style="padding-top:10px;margin:0;padding-right: 12.5px">Close</ks>
+</div>
+</div>
+</div>
+<div class="page-content">
+<div style="margin-top:53px;padding:0px;" class="block">
+<div class="list media-list" id="all">
+<ul>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li></ul></div>
+</div>
+<div class="popup" id="Mstafa-App">
+<div class="view">
+<div class="page">
+<div class="navbar navbar-large">
+<div class="navbar-bg"></div>
+<div class="navbar-inner">
+<div class="title sliding">ئه‌په‌كان / زیادكراوه‌كان</div>
+<center>
+<div class="title-large">
+<div class="title-large-text">Apps</div>
+</div>
+</center>
+<div class="right">
+<ks class="link popup-close" style="padding-top:10px;margin:0;padding-right: 12.5px">Close</ks>
+</div>
+</div>
+</div>
+<div class="page-content">
+<div style="margin-top:53px;padding:0px;" class="block">
+<div class="list media-list" id="all">
+<ul>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='itms-services://?action=download-manifest&amp;url=https://MstafaExpert.xyz/App/'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/AG7EKx">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">SnapChat</div>
+<div class="item-title" style="color: #33cccc">Soon</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='itms-services://?action=download-manifest&amp;url=https://MstafaExpert.xyz/App18/youtube'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/UsIpMF">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">Youtube++</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='itms-services://?action=download-manifest&amp;url='" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/cr8DCy">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">instagramDL</div>
+<div class="item-title" style="color: #33cccc">Soon</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+</li><li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/yoTo2k'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://bit.ly/3fRJzlU">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">Funimate</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/6mSO6f'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/fpMr0W">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">DrawTextPath</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">free</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/h60wTF'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/PzpWir">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">Pixelmator</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">free</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/JGeGpb'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/rLtsSg">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">VivaCut</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='itms-services://?action=download-manifest&amp;url=https://MstafaExpert.xyz/App/tik'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/9QXR4j">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">tiktok++</div>
+<div class="item-title" style="color: #33cccc">Soon</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">داگرتنی ڤیدیۆ بێ لۆگۆ</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/fyh9GG'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://bit.ly/2KFBENa">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">CutecutPro</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">free</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+</li><li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='itms-services://?action=download-manifest&amp;url=https://MstafaExpert.xyz/App18/videost'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/RgsyFu">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">videostar</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">هەموو فلتەرەکان کراوەتەوە</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/cptJiX'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://bit.ly/3jGEkG4">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">KineMaster</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='itms-services://?action=download-manifest&amp;url='" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/wtcQoA">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">Enlight</div>
+<div class="item-title" style="color: #33cccc">Soon</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='itms-services://?action=download-manifest&amp;url='" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/4yyqVj">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">Perfect-Video</div>
+<div class="item-title" style="color: #33cccc">Soon</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='itms-services://?action=download-manifest&amp;url=https://MstafaExpert.xyz/App18/procam'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/dqUt4R">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">Procam</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='itms-services://?action=download-manifest&amp;url=https://MstafaExpert.xyz/App18/videoshow'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/aeiRms">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">VideoShow</div>
+<div class="item-title" style="color: #33cccc">Soon</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='itms-services://?action=download-manifest&amp;url='" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/QQA4Bs">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">lumafusion</div>
+<div class="item-title" style="color: #33cccc">soon</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='itms-services://?action=download-manifest&amp;url='" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/oPiJci">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">Infltr</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/8obN3W'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/unZxJz">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">phonto</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/AUXfxn'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://bit.ly/3pH0dt8">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">inshot</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/Q2Dnk8'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/9KBbou">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">Focos</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='itms-services://?action=download-manifest&amp;url=https://MstafaExpert.xyz/App18/infltr'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/oPiJci">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">infltr</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='itms-services://?action=download-manifest&amp;url=https://MstafaExpert.xyz/App18/intromate'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/FR9bkE">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">intromate</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/sRO9gv'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/ksYFLJ">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">Touch</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="popup" id="Mstafa-Jb">
+<div class="view">
+<div class="page">
+<div class="navbar navbar-large">
+<div class="navbar-bg"></div>
+<div class="navbar-inner">
+<div class="title sliding">ئه‌په‌كان / زیادكراوه‌كان</div>
+<center>
+<div class="title-large">
+<div class="title-large-text">JailBreaks</div>
+</div>
+</center>
+<div class="right">
+<ks class="link popup-close" style="padding-top:10px;margin:0;padding-right: 12.5px">Close</ks>
+</div>
+</div>
+</div>
+<div class="page-content">
+<div style="margin-top:53px;padding:0px;" class="block">
+<div class="list media-list" id="all">
+<ul>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/uNxEyQ'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/JHHNJt">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">Unc0ver</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">v-8.0.2-ios 11-14.8</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="popup" id="Mstafa-Tuto">
+<div class="view">
+<div class="page">
+<div class="navbar navbar-large">
+<div class="navbar-bg"></div>
+<div class="navbar-inner">
+<div class="title sliding">ئه‌په‌كان / زیادكراوه‌كان</div>
+<center>
+<div class="title-large">
+<div class="title-large-text">فێرکاری</div>
+</div>
+</center>
+<div class="right">
+<ks class="link popup-close" style="padding-top:10px;margin:0;padding-right: 12.5px">Close</ks>
+</div>
+</div>
+</div>
+<div class="page-content">
+<div style="margin-top:53px;padding:0px;" class="block">
+<div class="list media-list" id="all">
+<ul>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/eyKgvu'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/Fd6v9x">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">گۆڕینی ناو و وێنەی بەرنامەی ئایفۆن</div>
+<div class="item-title" style="color: #33cccc"></div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">(بەروار:02/08/22)</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/jYzBSY'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/wKp1RN">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">دەستکاری کردنی دایلب</div>
+<div class="item-title" style="color: #33cccc"></div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">(بەروار:02/08/22)</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/czAVtA'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/cl1ePn">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">گۆڕینی ئەپڵ ئایدی بۆ کۆریی</div>
+<div class="item-title" style="color: #33cccc"></div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">(بەروار:02/08/22)</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/5fDjSe'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/TtCthn">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">گۆڕینی گۆگڵ پلەی بۆ ئەمریکی</div>
+<div class="item-title" style="color: #33cccc"></div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">(بەروار:02/08/22)</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/Sd6oTe'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/xD2t8y">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">نەهێشتنی بەشی ڕەشکردنەوە لە ئایفۆن</div>
+<div class="item-title" style="color: #33cccc"></div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">(بەروار:02/08/22)</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/AErUMs'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/klEMpF">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">گۆڕینی سایت بۆ وێب ئەپ</div>
+<div class="item-title" style="color: #33cccc"></div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">(بەروار:02/08/22)</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/p7LyWH'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/C7NeeC">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">بلۆککردنی هەر وێبسایتێک لە ئایفۆن</div>
+<div class="item-title" style="color: #33cccc"></div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">(بەروار:02/08/22)</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="popup" id="Mstafa-Game">
+<div class="view">
+<div class="page">
+<div class="navbar navbar-large">
+<div class="navbar-bg"></div>
+<div class="navbar-inner">
+<div class="title sliding"></div>
+<center>
+<div class="title-large">
+<div class="title-large-text">Game</div>
+</div>
+</center>
+<div class="right">
+<ks class="link popup-close" style="padding-top:10px;margin:0;padding-right: 12.5px">Close</ks>
+</div>
+</div>
+</div>
+<div class="page-content">
+<div style="margin-top:53px;padding:0px;" class="block">
+<div class="list media-list" id="all">
+<ul>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/YoigJS'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://bit.ly/3vnjEf0">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">8-BallPool</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='itms-services://?action=download-manifest&amp;url='" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/QForbY">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">Candy Crush</div>
+<div class="item-title" style="color: #33cccc">Soon</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/F6lxDZ'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/xTiUf3">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">Limbo</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/MzCxT0'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/Kf7ugm">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">Gta:Sa-Hack</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/eLUVn9'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/g651qz">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">Plague-inc</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/258PtI'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/8l6jbH">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">Getting-over-it</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/uEMtiD'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/6hqbW0">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">amongus</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/EgYNIS'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/vn4X0J">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">agario</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='itms-services://?action=download-manifest&amp;url=https://MstafaExpert.xyz/App18/ppsspp'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/1IR9aY">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">ppsspp</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/3COLZe'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/4hNqiz">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">scorehero</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='itms-services://?action=download-manifest&amp;url='" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/f7kQs9">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">Victor</div>
+<div class="item-title" style="color: #33cccc">Soon</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/jLAN4M'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/DfJTtp">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">dream league 2022</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/cNjMP4'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/vb3waE">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">human</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+ <li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/IOlKxo'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/THMonS">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">inside</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='https://is.gd/MdM7ls'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/wKpv7u">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">MineCraft</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='itms-services://?action=download-manifest&amp;url='" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/Os1iWR">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">Pubg</div>
+<div class="item-title" style="color: #33cccc"></div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a style="color: inherit;" class="popup-open" data-popup="#dl-popup">
+<div onclick="location='itms-services://?action=download-manifest&amp;url=https://MstafaExpert.xyz/App18/hill'" class="item-content">
+<div class="item-media">
+<img style="width:50px;height:50px;border-radius:30%;background-color:none;" src="https://is.gd/CI8zp3">
+</div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">Hill Climb</div>
+<div class="item-title" style="color: #33cccc">Revoked</div>
+</div>
+<div class="item-title-row">
+<div class="item-subtitle">Tweaked</div>
+<div class="item-subtitle" style="color: #808080"></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="About" class="tabcontent" style="display: none;">
+
+
+
+<meta charset="utf-8">
+
+<h2 style="text-align: center;"><span style="color: green;">&nbsp;بەناوی خودای گەورەو میهرەبان&nbsp;</span></h2><h2 style="text-align: center;"><span style="color: green;">من ناوم مصطفي لەکوردستان لە مانگی ٤ی سالی ٢٠٢٠ ئەم وێبسایتەم&nbsp;</span></h2><h2 style="text-align: center;"><span style="color: green;">درووستکردووە بۆ خزمەتی گەلی کورد تاکوو ئێستاش بەردەوامم لە&nbsp;</span></h2><h2 style="text-align: center;"><span style="color: green;">زیاد کردنی بابەتەکان هیوادارم رۆژێک خزمەتێکی بچوکیش بێت</span></h2><h2 style="text-align: center;"><span style="color: green;">بەئێوەم گەیاندبێت</span></h2>
+<br>
+<div class="ui divider"></div>
+<br>
+<div class="ui grid ">
+<div class="eight wide column">
+<a onclick="location='https://t.me/MstafaExpert'" class="ui telegram button fluid">
+<i class=""></i>
+Telegram
+</a>
+</div>
+<div class="eight wide column">
+<a onclick="location='https://is.gd/DWsY5t'" class="ui button yellow fluid">
+<i class=""></i>
+SnapChat
+</a>
+</div>
+<div class="eight wide column">
+<a onclick="location='https://is.gd/7uQYV8'" class="ui youtube button fluid">
+<i class=""></i>
+YouTube
+</a>
+</div>
+<div class="eight wide column">
+<a onclick="location='https://is.gd/SWHl2D'" class="ui instagram button fluid">
+<i class=""></i>
+instagram
+</a>
+</div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+function Mcho(){
+   halfmoon.toggleDarkMode();
+}
+</script>
+<script src="framework7/js/framework7.bundle.min.js"></script>
+<script src="/Js-Css/wenz.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-108411570-1"></script>
+<script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date());gtag('config', 'UA-108411570-1');</script>
+<script>
+    (function () {
+        document.getElementById("linkId").addEventListener("keydown", function (e) {
+            if (e.keyCode === 13) {
+                goToLink();
+            }
+        });
+    })();
+
+    (function () {
+        document.getElementById("linkId1").addEventListener("keydown", function (e) {
+            if (e.keyCode === 13) {
+                goToLink();
+            }
+        });
+    })();
+
+    
+    function iMstafa58() {
+        var code = document.getElementById("linkId").value;
+        var url = "https://mstafaExpert.xyz/Code/";
+    }
+    function iMstafa() {
+        var code = document.getElementById("linkId").value;
+        var url = "https://mstafaExpert.xyz/Code/";
+        window.location = url + code;
+    }
+    document.getElementById("Mstafa71").click();
+    document.getElementById("Mode").click();
+</script>
+<script>
+function goToLink() {
+        var code = document.getElementById("linkId1").value;
+        var url = "http://mstafa-Expert.ml/Codes";
+        window.location = url + code;
+    }
+
+var modal = document.getElementById("myModal");
+
+var btn = document.getElementById("myBtn");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<script>
+  
+</script>
+<script>
+
+    function MstafaSign() {
+        var code = document.getElementById("linkId").value;
+        var url = "https://www.youtube.com/embed/X-SuzYeScqM?autoplay=1&mute=1";
+        window.location = url + code;
+    }
+</script>
+<script>
+
+    function MstafaApp() {
+        var code = document.getElementById("linkId").value;
+        var url = "https://bit.ly/38rBbWW";
+        window.location = url + code;
+    }
+    </script>
+<script src="https://mstafaexpert.xyz/js/routes.js"></script>
+<script src="https://mstafaexpert.xyz/js/app.js"></script>
+<script src="https://mstafaexpert.xyz/Js-Css/half.js"></script>
+<script src="https://mstafaexpert.xyz/js/inobounce.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+      if (navigator.userAgent.match(/iPad|iPhone|iPod/i)) document.getElementById("info_label").innerHTML = ((navigator.userAgent).match(/OS (\d)?\d_\d(_\d)?/i)[0].replace(/_/g, ".").replace("OS", "iOS") + " - MstafaExpert v1.1");
+      else {
+          document.getElementById("info_label").innerHTML = "iMstafa";
+          $$('#info_label').css('margin-bottom', '-36px');
+      }
+  </script>
+
+
+
+</body></html>
