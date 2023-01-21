@@ -1,11 +1,1719 @@
-<html>
-    <head>
-        <title>Simple URL Shortener</title>
-    </head>
-    <body>
-        <input type="url" id="urlinput">
-        <button onclick="shorturl()">Short The URL</button>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="main.js"></script>
-    </body>
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="ios device-pixel-ratio-3 device-retina device-ios device-ios-15 device-ios-15-3-1 device-ios-gt-14 device-ios-gt-13 device-ios-gt-12 device-ios-gt-11 device-ios-gt-10 device-ios-gt-9 device-ios-gt-8 device-ios-gt-7 device-ios-gt-6 device-iphone-x">
+ 
+<head>
+ 
+    <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7485466725732493" crossorigin="anonymous"></script>
+ 
+    <meta charset="UTF-8">
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+    <title>Tweakdoor</title>
+    <meta name="description" content="Tweakdoor is an Alternative App Store for iPhone & iPad • iOS 11 - iOS 16 • No Computer • No Jailbreak">
+    <meta name="language" content="English">
+    <link rel="icon" type="image/png" href="https://ittza7aa.com/Images/tweakdoor.jpg">
+    <link rel="apple-touch-icon" href="https://ittza7aa.com/Images/tweakdoor.jpg">
+    <link rel="icon" href="https://ittza7aa.com/Images/tweakdoor.jpg">
+    <link rel="shortcut icon" href="https://ittza7aa.com/Images/tweakdoor.jpg">
+    <link rel="apple-touch-startup-image" href="https://ittza7aa.com/Images/tweakdoor.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="x/framework7/css/framework7.bundle.min.css">
+    <link rel="stylesheet" href="x/css/icons.css">
+    <link rel="stylesheet" href="x/css/app.css">
+    <link rel="stylesheet" href="x/css/style.css">
+    <script src="../client.crisp.chat/l.js" async=""></script>
+</head>
+ 
+<body class=" theme-light color-theme-red pace-done">
+    <div class="pace  pace-inactive">
+        <div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+            <div class="pace-progress-inner"></div>
+        </div>
+        <div class="pace-activity"></div>
+    </div>
+ 
+ 
+    <div id="app" class="framework7-root">
+        <div class="statusbar"></div>
+        <div class="panel-backdrop"></div>
+        <div class="panel panel-left panel-cover theme-dark">
+            <div class="view">
+                <div class="page">
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="title">Left Panel</div>
+                        </div>
+                    </div>
+                    <div class="page-content">
+ 
+ 
+                        <div class="block">Left panel content goes here</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-right panel-reveal theme-dark">
+            <div class="view">
+                <div class="page">
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="title">Right Panel</div>
+                        </div>
+                    </div>
+                    <div class="page-content">
+                        <div class="block">Right panel content goes here</div>
+                    </div>
+                </div>
+ 
+            </div>
+        </div>
+        <div class="views tabs safe-areas">
+            <div class="toolbar tabbar-labels toolbar-bottom">
+                <div class="toolbar-inner">
+                    <a href="#view-home" class="tab-link tab-link-active">
+                        <i class="icon f7-icons ios-only">home</i>
+                        <i class="icon f7-icons ios-only icon-ios-fill">home_fill</i>
+                        <i class="icon material-icons md-only">home</i>
+                        <span class="tabbar-label">Home</span>
+                    </a>
+                    <a href="#view-iphone" class="tab-link">
+                        <i class="icon f7-icons ios-only">search</i>
+                        <i class="icon f7-icons ios-only icon-ios-fill">search</i>
+                        <i class="icon material-icons md-only">search</i>
+                        <span class="tabbar-label">Search</span>
+                    </a>
+ 
+                    <a href="#view-info" class="tab-link">
+                        <i class="icon f7-icons ios-only">gear</i>
+                        <i class="icon f7-icons ios-only icon-ios-fill">gear</i>
+                        <i class="icon material-icons md-only">gear</i>
+                        <span class="tabbar-label">Settings</span>
+                    </a>
+                </div>
+            </div>
+            <div id="view-home" class="view view-main tab tab-active">
+                <div class="navbar">
+                    <div class="navbar-inner navbar-inner-large sliding navbar-current">
+                        <div class="right">
+                            <a href="javascript:window.location.reload(true)" class="f7-icons rotate">reload</a>
+                            <a href="/appleid"><i class="f7-icons">logo_apple
+                                </i></a>
+ 
+ 
+                        </div>
+                        <div class="left">
+                            <script>
+                                var today = new Date();
+                                var dd = String(today.getDate()).padStart(2, '0');
+                                var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+                                var yyyy = today.getFullYear();
+ 
+                                today = yyyy + '/' + mm + '/' + dd;
+                                document.write(today);
+                            </script>2023/01/21
+ 
+                            <a style="margin-left : 4px;" href="/server"><i class="f7-icons">bolt_fill
+                                </i></a>
+                        </div>
+ 
+                    </div>
+                </div>
+                <div class="page page-current page-with-navbar-large" data-name="home">
+ 
+ 
+                    <div class="page-content">
+                        <center>
+                            <img style="margin-top: 2.5%; border-radius: 20%;" width="200" class="elevation-12 animated zoomIn" src="https://is.gd/2EiU1B">
+                        </center>
+                        <br>
+                        <h1 class="header">Tweakdoor</h1>
+ 
+ 
+ 
+ 
+ 
+ 
+                        <div class="elevation-12 list inset media-list">
+ 
+                            <input style="text-align: center;" type="number" id="code" maxlength="3" onkeypress="is_num(event);" class="block-title block-title-medium" aria-describedby="basic-addon1" placeholder="Search">
+ 
+                            <input class="button button-fill convert-form-to-data" type="button" id="get" value="Get" data-disable-with="Search">
+                        </div>
+ 
+                        <div class="M-Error" style="text-align: right; font-family: myFirstFont;">
+                            <p id="P-For-Errors" style="text-align: right; font-family: myFirstFont;"> </p>
+                        </div>
+                        <div>
+                            <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4420332636058530" crossorigin="anonymous"></script>
+                            <!-- tweakdoornew -->
+                            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4420332636058530" data-ad-slot="2168616157" data-ad-format="auto"></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+ 
+ 
+                        <div class="block-title">Home Page</div>
+                        <div class="list inset media-list elevation-12 app-card space-bottom">
+                            <ul>
+                                <li class="media-item">
+                                    <a href="/shadowrocket" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://ittza7aa.com/aseets/pic/today/shadowrocket.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Shadowrocket</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">square_favorites_alt</i></div>
+                                                    <div class="chip-label">Appleid & Script</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="media-item">
+                                    <a href="https://dl.tweakdoor.com" class="item-link link external">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://tweakdoor.com/convert.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Video Convert</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">square_favorites_alt</i></div>
+                                                    <div class="chip-label">Support Tiktok,Instagram & more</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="media-item">
+                                    <a href="https://storyclone.com" class="item-link link external">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://tweakdoor.com/snap.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Snapchat Story Downloader</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">square_favorites_alt</i></div>
+                                                    <div class="chip-label">Download Story</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="media-item">
+                                    <a href="https://weplayold.com" class="item-link link external">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://tweakdoor.com/retro.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Retro Games online</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">square_favorites_alt</i></div>
+                                                    <div class="chip-label">Play PS1 Gameboy,Sega</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="media-item">
+                                    <a href="https://games.tweakdoor.com/" class="item-link link external">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://tweakdoor.com/html5.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">HTML5 Games Online</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">square_favorites_alt</i></div>
+                                                    <div class="chip-label">Play Old Games</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4420332636058530" crossorigin="anonymous"></script>
+                            <!-- tweakdoornew -->
+                            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4420332636058530" data-ad-slot="2168616157" data-ad-format="auto"></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+ 
+ 
+                    </div>
+                </div>
+            </div>
+ 
+ 
+            <div id="view-iphone" class="view tab">
+                <div class="navbar">
+                    <div class="navbar-inner navbar-inner-large sliding navbar-current">
+                        <div class="right">
+                            <a href="javascript:window.location.reload(true)" class="f7-icons rotate">reload</a>
+                            <a href="/appleid"><i class="f7-icons">logo_apple
+                                </i></a>
+ 
+ 
+                        </div>
+                        <div class="left">
+                            <script>
+                                var today = new Date();
+                                var dd = String(today.getDate()).padStart(2, '0');
+                                var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+                                var yyyy = today.getFullYear();
+ 
+                                today = yyyy + '/' + mm + '/' + dd;
+                                document.write(today);
+                            </script>2023/01/21
+ 
+                            <a style="margin-left : 4px;" href="/server"><i class="f7-icons">bolt_fill
+                                </i></a>
+                        </div>
+ 
+                        <div class="subnavbar">
+                            <form data-search-in=".item-title" data-search-container=".list" class="searchbar searchbar-init">
+                                <div class="searchbar-inner">
+                                    <div class="searchbar-input-wrap">
+                                        <input type="search" placeholder="Search">
+                                        <i class="searchbar-icon"></i>
+                                        <span class="input-clear-button"></span>
+                                    </div>
+                                    <span class="searchbar-disable-button if-not-aurora">Cancel</span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="page page-current page-with-navbar-large page-with-subnavbar">
+ 
+ 
+ 
+                    <div class="page-content">
+                        <div class="searchbar-backdrop"></div>
+                        <div style="margin-top : -12px;" class="elevation-12 list media-list inset searchbar-found">
+                            <ul>
+                                <li>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/videostarhack" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/videostar.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Video Star Hack</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">8.3.2</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">100.15MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/videostarpro" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/videostarpro.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Video Star Pro</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">11.2.8</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">136.55MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/ipogo" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/ipogo.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">iPoGo</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">257.0</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">113.57MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/spooferpro" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/spooferpro.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Spoofer Pro</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">257.0</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">110.57MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4420332636058530" crossorigin="anonymous"></script>
+                            <!-- tweakdoornew -->
+                            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4420332636058530" data-ad-slot="2168616157" data-ad-format="auto"></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+                        <div style="margin-top : -12px;" class="elevation-12 list media-list inset searchbar-found">
+                            <ul>
+                                <li>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/unc0ver" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/uncover.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Unc0ver</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">8.0.2</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">51.97MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/xinajailbreak" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/xina.jfif" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Xina Jailbreak</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">1.1.5</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">58MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/taurine" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/taurine.jpg" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Taurine</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">1.19.22</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">448.3MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/odyssey" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/odessey.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">odyssey</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">5.2.11</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">113MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/trollstore" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/trollstore.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">TrollStore</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">5.2.11</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">113MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="margin-top : -12px;" class="elevation-12 list media-list inset searchbar-found">
+                            <ul>
+                                <li>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/spotify" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/spotify.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Spotify Premium</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">8.7.78</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">59.07MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/snapchat" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/snapchat.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Snapchat++</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">last</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">..</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/instagram" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/insta.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Instagram++</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">187.0</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">77.82MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <a href="/tiktok" class="item-link">
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <img src="https://plist.tweakdoor.com/img/tiktok.png" class="appiconx elevation-5 animated zoomIn">
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title">Tiktok++</div>
+                                            </div>
+                                            <div class="chip">
+                                                <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                <div class="chip-label">26.6.1</div>
+                                            </div>
+                                            <div class="chip">
+                                                <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                <div class="chip-label">179.03MB</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <li class="media-item">
+                                    <a href="/youtube" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/youtube.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Youtube++</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">5.25</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">162MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="margin-top : -12px;" class="elevation-12 list media-list inset searchbar-found">
+                            <ul>
+                                <li>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/pubg" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/pubg.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">PUBG Hack</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">5.25</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">162MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/fortnite" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/fortnite.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Fortnite Hack</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">8.0.2</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">16.53 MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/callofduty" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/callofduty.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Call of Duty Hack</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">1.0.36</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">2409MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/freefire" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/freefire.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Free Fire Hack</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">1.93.1</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">546MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/lastdayonearth" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/lastdayonearth.jpg" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Last Day on Earth Hack</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">1.19.9</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">728.02MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="margin-top : -12px;" class="elevation-12 list media-list inset searchbar-found">
+                            <ul>
+                                <li>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/picsart" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/picsart.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Picsart Pro</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">19.5</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">176.5MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/procreate" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://is.gd/ifdoa5" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Procreate</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">3.2.0</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">287MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/lumafusion" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/luma.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">LumaFusion</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">4.0.7</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">125MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/ppsspp" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/ppsspp.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">PPSSPP</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">1.10.3-1201</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">16.53 MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/delta" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/delta.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Delta Emulator</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">Last</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">..</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/zinitevi" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/zinitevi.webp" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Zinitevi</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">last</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">1.5GB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="margin-top : -12px;" class="elevation-12 list media-list inset searchbar-found">
+                            <ul>
+                                <li>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/gtasan" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/gtasa.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">GTA SAN</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">2.02.11</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">1.51MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/bully" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/bully.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Bully</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">13.6.6</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">23.9 MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/minecraft" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/minecraft.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Minecraft</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">1.19.40</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">563.02MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/carparking" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/car_parking.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Car Parking Hack</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">4.7.4</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">602MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/carxstreet" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/carxstreet.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">CarX Street Hack</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">0.6.0</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">3.21GB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/carxdriftt" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/carxdrift2.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">CarX Drifting 2 Hack</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">213.0</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">98 MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="margin-top : -12px;" class="elevation-12 list media-list inset searchbar-found">
+                            <ul>
+                                <li>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/amongus" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/amongus.jpg" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Among Us Hack</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">2022</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">251MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/8ball" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="img/8ball.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">8 Ball Pool Hack</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">5.2</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">83MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/clashofclans" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/clashofclans.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Clash of Clans Hack</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">15.0.2</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">283.21MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/clashroyal" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/clashroyal.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Clash Royal Hack</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">3.287</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">156.13MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/mortalcombat" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/mortal.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Mortal Kombat Hack</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">15.0.2</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">download</i></div>
+                                                    <div class="chip-label">283.21MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media-item">
+                                    <a href="/subwaysurfers" class="item-link">
+                                        <div class="item-content">
+                                            <div class="item-media">
+                                                <img src="https://plist.tweakdoor.com/img/subway.png" class="appiconx elevation-5 animated zoomIn">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">Subway Surfers Hack</div>
+                                                </div>
+                                                <div class="chip">
+                                                    <div class="chip-media bg-color-blue"><i class="icon f7-icons">gear</i></div>
+                                                    <div class="chip-label">3.2.0</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+ 
+ 
+ 
+            <div id="view-info" class="view tab">
+                <div class="page page-current" data-name="info">
+ 
+                    <div class="navbar">
+                        <div class="right">
+                            <script>
+                                var today = new Date();
+                                var dd = String(today.getDate()).padStart(2, '0');
+                                var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+                                var yyyy = today.getFullYear();
+ 
+                                today = yyyy + '/' + mm + '/' + dd;
+                                document.write(today);
+                            </script>2023/01/21
+                        </div>
+                    </div>
+ 
+ 
+ 
+                    <div class="page-content">
+ 
+ 
+ 
+ 
+ 
+                        <div class="block-title" style="padding-top: -12px;">
+                            Change the Theme
+                        </div>
+                        <div class="elevation-12 list inset media-list">
+                            <ul>
+                                <li>
+ 
+                                    <a href="/theming" class="item-content item-link">
+ 
+                                        <div class="item-media">
+                                            <i slot="media" class="icon f7-icons">gear</i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div style="font-weight: 300;" class="item-title">Themes</div>
+ 
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+ 
+                        <div class="list media-list inset">
+ 
+                        </div>
+ 
+ 
+                        <div class="block-title" style="padding-top: -10px;">
+                            Socail Media
+                        </div>
+                        <div class="space elevation-12 list inset accordion-list">
+                            <ul>
+                                <li class="accordion-item">
+                                    <a class="item-link">
+                                        <div class="item-content" accordionitem="true">
+                                            <div class="item-media">
+                                                <i class="icon f7-icons ">persons</i>
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div style="font-weight: 300;" class="item-title">
+                                                        Socail Media:
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="accordion-item-content" style="" aria-hidden="true">
+ 
+                                        <ul>
+                                            <li>
+                                                <a onclick="location='https://www.instagram.com/hadoiz/'" class="item-link item-content">
+                                                    <div class="item-media"><i class="icon f7-icons">logo_instagram</i></div>
+                                                    <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                            <div class="item-title">Instagram</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+ 
+                                            <li>
+ 
+                                                <a onclick="location='https://t.me/tweakdoorcode'" class="item-link item-content">
+                                                    <div class="item-media"><i class="icon f7-icons color-blue">paper_plane_fill</i></div>
+                                                    <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                            <div class="item-title">Telegram Channel</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+ 
+ 
+ 
+                                            <li>
+ 
+                                                <a onclick="location='https://t.me/tweakdoorvs'" class="item-link item-content">
+                                                    <div class="item-media"><i class="icon f7-icons color-blue">paper_plane_fill</i></div>
+                                                    <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                            <div class="item-title">Telegram Group Chat</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+ 
+ 
+ 
+ 
+                        <div class="block-title" style="padding-top: -10px;">
+                            How to Fix:
+                        </div>
+                        <div class="space elevation-12 list inset accordion-list">
+                            <ul>
+                                <li class="accordion-item">
+                                    <a class="item-link">
+                                        <div class="item-content" accordionitem="true">
+                                            <div class="item-media">
+                                                <i class="icon f7-icons">gear_alt_fill</i>
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div style="font-weight: 300;" class="item-title">
+                                                        Untrusted Enterprise Developer
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="accordion-item-content" style="" aria-hidden="true">
+                                        <div class="block">
+                                            <p>Settings > General > VPN and
+                                                Device Management > Enterprise App >
+                                                Select Developer Profile > Set to
+                                                "Trusted"</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+ 
+                        <center>
+                            <div id="container">
+                                Browser Details: <span id="browser-details">Safari</span><br>
+                                OS: <span id="os-details">iPhone</span>
+ 
+ 
+                                <p style="color: #808080;margin-top: -1px;" id="info_label">iOS 15.3.1 - Tweakdoor.com </p>
+ 
+ 
+ 
+                            </div>
+                            <!----
+     </center>
+                      
+                             
+                                          <center>
+                      <div class="item-after">
+<img src = "https://visits.roshan.cyou/visits-counter2?visitsBG=44000D&countBG=FF6768&visitsText=FF6768&countText=44000D&textShadow=0&textContent=Website+Views"  height = 30px/>
+                </div>
+        </center>
+            
+          ---->
+                        </center>
+                    </div>
+                </div>
+            </div>
+ 
+ 
+            <script>
+                if (navigator.userAgent.match(/iPad|iPhone|iPod/i)) document.getElementById("info_label").innerHTML = ((navigator.userAgent).match(/OS (\d)?\d_\d(_\d)?/i)[0].replace(/_/g, ".").replace("OS", "iOS") + " - Tweakdoor.com ");
+                else {
+                    document.getElementById("info_label").innerHTML = "Tweakdoor.com";
+                    $$('#info_label').css('margin-bottom', '-36px');
+                }
+            </script>
+ 
+            <script>
+                //References
+                let browserDetailsRef = document.getElementById("browser-details");
+                let osDetailsRef = document.getElementById("os-details");
+                var browserList = [{
+                        name: "Firefox",
+                        value: "Firefox"
+                    },
+                    {
+                        name: "Opera",
+                        value: "OPR"
+                    },
+                    {
+                        name: "Edge",
+                        value: "Edg"
+                    },
+                    {
+                        name: "Chrome",
+                        value: "Chrome"
+                    },
+                    {
+                        name: "Safari",
+                        value: "Safari"
+                    },
+                ];
+                var os = [{
+                        name: "Android",
+                        value: "Android"
+                    },
+                    {
+                        name: "iPhone",
+                        value: "iPhone"
+                    },
+                    {
+                        name: "iPad",
+                        value: "Mac"
+                    },
+                    {
+                        name: "Macintosh",
+                        value: "Mac"
+                    },
+                    {
+                        name: "Linux",
+                        value: "Linux"
+                    },
+                    {
+                        name: "Windows",
+                        value: "Win"
+                    },
+                ];
+ 
+                let broswerChecker = () => {
+                    //Useragent contains browser details and OS  details but we need to separate them
+                    let userDetails = navigator.userAgent;
+                    for (let i in browserList) {
+                        //check if the string contains any value from the array
+                        if (userDetails.includes(browserList[i].value)) {
+                            //extract browser name and version from the string
+                            browserDetailsRef.innerHTML = browserList[i].name || "Unknown Browser";
+                            break;
+                        }
+                    }
+                    for (let i in os) {
+                        //check if string contains any value from the object
+                        if (userDetails.includes(os[i].value)) {
+                            //displau name of OS from the object
+                            osDetailsRef.innerHTML = os[i].name;
+                            break;
+                        }
+                    }
+                };
+ 
+                window.onload = broswerChecker();
+            </script>
+ 
+            <script>
+                document.oncontextmenu = function(e) {
+                    e.preventDefault()
+                };
+                document.onkeydown = function(e) {
+                    if (e.keyCode == 85) {
+                        e.preventDefault();
+                    } else if (e.keyCode == 123) {
+                        e.preventDefault();
+                    } else if (e.keyCode == 73) {
+                        e.preventDefault();
+                    };
+                };
+            </script>
+ 
+ 
+ 
+            <script>
+                //<![CDATA[
+                shortcut = {
+                    all_shortcuts: {},
+                    add: function(a, b, c) {
+                        var d = {
+                            type: "keydown",
+                            propagate: !1,
+                            disable_in_input: !1,
+                            target: document,
+                            keycode: !1
+                        };
+                        if (c)
+                            for (var e in d) "undefined" == typeof c[e] && (c[e] = d[e]);
+                        else c = d;
+                        d = c.target, "string" == typeof c.target && (d = document.getElementById(c.target)), a = a.toLowerCase(), e = function(d) {
+                            d = d || window.event;
+                            if (c.disable_in_input) {
+                                var e;
+                                d.target ? e = d.target : d.srcElement && (e = d.srcElement), 3 == e.nodeType && (e = e.parentNode);
+                                if ("INPUT" == e.tagName || "TEXTAREA" == e.tagName) return
+                            }
+                            d.keyCode ? code = d.keyCode : d.which && (code = d.which), e = String.fromCharCode(code).toLowerCase(), 188 == code && (e = ","), 190 == code && (e = ".");
+                            var f = a.split("+"),
+                                g = 0,
+                                h = {
+                                    "`": "~",
+                                    1: "!",
+                                    2: "@",
+                                    3: "#",
+                                    4: "$",
+                                    5: "%",
+                                    6: "^",
+                                    7: "&",
+                                    8: "*",
+                                    9: "(",
+                                    0: ")",
+                                    "-": "_",
+                                    "=": "+",
+                                    ";": ":",
+                                    "'": '"',
+                                    ",": "<",
+                                    ".": ">",
+                                    "/": "?",
+                                    "\\": "|"
+                                },
+                                i = {
+                                    esc: 27,
+                                    escape: 27,
+                                    tab: 9,
+                                    space: 32,
+                                    "return": 13,
+                                    enter: 13,
+                                    backspace: 8,
+                                    scrolllock: 145,
+                                    scroll_lock: 145,
+                                    scroll: 145,
+                                    capslock: 20,
+                                    caps_lock: 20,
+                                    caps: 20,
+                                    numlock: 144,
+                                    num_lock: 144,
+                                    num: 144,
+                                    pause: 19,
+                                    "break": 19,
+                                    insert: 45,
+                                    home: 36,
+                                    "delete": 46,
+                                    end: 35,
+                                    pageup: 33,
+                                    page_up: 33,
+                                    pu: 33,
+                                    pagedown: 34,
+                                    page_down: 34,
+                                    pd: 34,
+                                    left: 37,
+                                    up: 38,
+                                    right: 39,
+                                    down: 40,
+                                    f1: 112,
+                                    f2: 113,
+                                    f3: 114,
+                                    f4: 115,
+                                    f5: 116,
+                                    f6: 117,
+                                    f7: 118,
+                                    f8: 119,
+                                    f9: 120,
+                                    f10: 121,
+                                    f11: 122,
+                                    f12: 123
+                                },
+                                j = !1,
+                                l = !1,
+                                m = !1,
+                                n = !1,
+                                o = !1,
+                                p = !1,
+                                q = !1,
+                                r = !1;
+                            d.ctrlKey && (n = !0), d.shiftKey && (l = !0), d.altKey && (p = !0), d.metaKey && (r = !0);
+                            for (var s = 0; k = f[s], s < f.length; s++) "ctrl" == k || "control" == k ? (g++, m = !0) : "shift" == k ? (g++, j = !0) : "alt" == k ? (g++, o = !0) : "meta" == k ? (g++, q = !0) : 1 < k.length ? i[k] == code && g++ : c.keycode ? c.keycode == code && g++ : e == k ? g++ : h[e] && d.shiftKey && (e = h[e], e == k && g++);
+                            if (g == f.length && n == m && l == j && p == o && r == q && (b(d), !c.propagate)) return d.cancelBubble = !0, d.returnValue = !1, d.stopPropagation && (d.stopPropagation(), d.preventDefault()), !1
+                        }, this.all_shortcuts[a] = {
+                            callback: e,
+                            target: d,
+                            event: c.type
+                        }, d.addEventListener ? d.addEventListener(c.type, e, !1) : d.attachEvent ? d.attachEvent("on" + c.type, e) : d["on" + c.type] = e
+                    },
+                    remove: function(a) {
+                        var a = a.toLowerCase(),
+                            b = this.all_shortcuts[a];
+                        delete this.all_shortcuts[a];
+                        if (b) {
+                            var a = b.event,
+                                c = b.target,
+                                b = b.callback;
+                            c.detachEvent ? c.detachEvent("on" + a, b) : c.removeEventListener ? c.removeEventListener(a, b, !1) : c["on" + a] = !1
+                        }
+                    }
+                }, shortcut.add("Ctrl+U", function() {
+                    top.location.href = ""
+                });
+ 
+                var message = "you don't have permission to access this resource";
+ 
+                function clickIE4() {
+                    if (event.button == 2) {
+                        alert(message);
+                        return false;
+                    }
+                }
+ 
+                function clickNS4(e) {
+                    if (document.layers || document.getElementById && !document.all) {
+                        if (e.which == 2 || e.which == 3) {
+                            alert(message);
+                            return false;
+                        }
+                    }
+                }
+                if (document.layers) {
+                    document.captureEvents(Event.MOUSEDOWN);
+                    document.onmousedown = clickNS4;
+                } else if (document.all && !document.getElementById) {
+                    document.onmousedown = clickIE4;
+                }
+                document.oncontextmenu = new Function("alert(message);return false")
+                //]]>
+            </script>
+ 
+            <script type="text/javascript">
+                window.$crisp = [];
+                window.CRISP_WEBSITE_ID = "b31e3320-1328-49cb-b747-993a90074ea3";
+                (function() {
+                    d = document;
+                    s = d.createElement("script");
+                    s.src = "../client.crisp.chat/l.js";
+                    s.async = 1;
+                    d.getElementsByTagName("head")[0].appendChild(s);
+                })();
+            </script>
+            <script>
+                (function() {
+                    var js = "window['__CF$cv$params']={r:'73514ec7ed0c1d61',m:'9XkBtHl5_gu9FpZrqPAinun.si5_wYOzEeGHoFZWjLU-1659553348-0-AcgIUVEDdFoWW3Oa72r9sY4UyM2GREvEI+OCSfSpQDdg24kDMbjtxCZx+lL8nYkcKgnPM14oGk62Lf7IKPhzZr9/uAtDvIVsImdC5y6E8vnu2uiN9Fsc4dfBw/dPhipP4g==',s:[0x252162f600,0xc7b3ca99c5],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible5615.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";
+                    var _0xh = document.createElement('iframe');
+                    _0xh.height = 1;
+                    _0xh.width = 1;
+                    _0xh.style.position = 'absolute';
+                    _0xh.style.top = 0;
+                    _0xh.style.left = 0;
+                    _0xh.style.border = 'none';
+                    _0xh.style.visibility = 'hidden';
+                    document.body.appendChild(_0xh);
+ 
+                    function handler() {
+                        var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;
+                        if (_0xi) {
+                            var _0xj = _0xi.createElement('script');
+                            _0xj.nonce = '';
+                            _0xj.innerHTML = js;
+                            _0xi.getElementsByTagName('head')[0].appendChild(_0xj);
+                        }
+                    }
+                    if (document.readyState !== 'loading') {
+                        handler();
+                    } else if (window.addEventListener) {
+                        document.addEventListener('DOMContentLoaded', handler);
+                    } else {
+                        var prev = document.onreadystatechange || function() {};
+                        document.onreadystatechange = function(e) {
+                            prev(e);
+                            if (document.readyState !== 'loading') {
+                                document.onreadystatechange = prev;
+                                handler();
+                            }
+                        };
+                    }
+                })();
+            </script>
+ 
+ 
+ 
+ 
+            <script>
+                document.onkeydown = function(e) {
+                    if (event.keyCode == 123) {
+                        return false;
+                    }
+                    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                        return false;
+                    }
+                    if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                        return false;
+                    }
+                    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                        return false;
+                    }
+                    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                        return false;
+                    }
+                }
+            </script>
+ 
+            <script>
+ 
+            </script>
+ 
+ 
+            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="x/framework7/js/framework7.bundle.min.js"></script>
+            <script src="x/js/routes.js"></script>
+            <script src="x/js/app.js"></script>
+            <script src="x/js/page.js"></script>
+            <script src="x/js/code.js"></script>
+            <script type="text/javascript">
+                if (localStorage.getItem('theme')) {
+                    $$("body").removeClass('theme-dark').removeClass('theme-light').removeClass('theme-dark-2').removeClass('theme-oled').addClass(localStorage.getItem('theme'));
+                }
+                if (localStorage.getItem('color-theme')) {
+                    $$("body").addClass(localStorage.getItem('color-theme'));
+                }
+            </script>
+ 
+ 
+ 
+ 
+        </div>
+    </div><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+</body>
+ 
 </html>
