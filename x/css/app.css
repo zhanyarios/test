@@ -1,0 +1,51 @@
+/* Your app styles here */
+.ios .tabbar-labels .tab-link:not(.tab-link-active) .icon-ios-fill {
+  display: none;
+}
+.ios .tabbar-labels .tab-link.tab-link-active .icon:not(.icon-ios-fill) {
+  display: none;
+}
+
+.appiconx {
+    border-radius: 30%;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 0 10px 0 #2e2e2e;
+    background-image: url(../../../i.imgur.com/avB6Liv.png);
+    background-size: contain;
+}
+
+.appicon {
+    margin-top: -25px;
+    border-radius: 30%;
+    height: 90px;
+    box-shadow: 0 0 10px 0 #2e2e2e;
+    background-image: url(../../../i.imgur.com/avB6Liv.png);
+    background-size: contain;
+}
+
+.list ul:before {
+    z-index: 0;
+}
+
+.header {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 3s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
